@@ -15,10 +15,8 @@ Predict the most likely time point for the bus to arrive each day based on recor
 ## Data and Methods
 The preliminary plan requires collecting data such as weather, week, and bus arrival time. The collection method will arrange for each team member to take turns responsible for one day, which can be recorded on-site at the bus stop or through bus query software or Google Maps to record the arrival time of the bus.
 
-
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8utxViE5V_fWjTpm7axMdXCRiE4OoGGntMK6CDoeIUio47Q/viewform?usp=sf_link"><strong>Form »</strong></a>
-Form : https://docs.google.com/forms/d/e/1FAIpQLSd8utxViE5V_fWjTpm7axMdXCRiE4OoGGntMK6CDoeIUio47Q/viewform?usp=sf_link
-Sheet: https://docs.google.com/spreadsheets/d/1bjB12z-MD0Y7CJDZW3cdJz3a1asGTp7nqkDMJSMV5Mw/edit?resourcekey=&gid=1078554397#gid=1078554397
+<a href="https://docs.google.com/spreadsheets/d/1bjB12z-MD0Y7CJDZW3cdJz3a1asGTp7nqkDMJSMV5Mw/edit?resourcekey=&gid=1078554397#gid=1078554397"><strong>Sheet »</strong></a>
 
 ## 您计划如何对数据进行建模
 
