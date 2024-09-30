@@ -1,8 +1,8 @@
 # CS506_Project
 # Boston Bus Route 57 Designated Station Arrival Prediction
 ## TeamMember
-<p>Jiangjian Xie</p>
-<p>Zhekai Zhu</p>
+<p>Jiangjian Xie (xjj2023@bu.edu)</p>
+<p>Zhekai Zhu (zzk@bu.edu)</p>
 <p>Wenyuan Cui</p>
 <p>Mohan Guo</p>
 
