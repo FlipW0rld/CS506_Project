@@ -19,10 +19,13 @@ The preliminary plan requires collecting data such as weather, week day, and bus
 <p><a href="https://docs.google.com/spreadsheets/d/1bjB12z-MD0Y7CJDZW3cdJz3a1asGTp7nqkDMJSMV5Mw/edit?resourcekey=&gid=1078554397#gid=1078554397" target="_blank"><strong>Sheet »</strong></a></p>
 
 ## Data Modeling
-<p><b>Linear regression model</b>: can be used as an initial model to predict bus arrival time.</p>
-<p><b>Decision trees or random forests</b>: These models can handle complex nonlinear relationships and are suitable for situations involving multiple influencing factors, such as weather, traffic, and the difference between weekdays and weekends.</p>
+<p><b>Linear regression model:</b> Can be used as an initial model to predict bus arrival time.</p>
+<p><b>Decision trees or random forests:</b> These models can handle complex nonlinear relationships and are suitable for situations involving multiple influencing factors, such as weather, traffic, and the difference between weekdays and weekends.</p>
 
 
 ## Data Visualization
+<p><b>Time Arrival Time Distribution Chart:</b> A line chart can be used to display the distribution of arrivals at each time point of the day, showing peak and off peak periods.</p>
+<p><b>The impact of weather on arrival time:</b> Box plots can be used to display the distribution of bus arrival time under different weather conditions (sunny, rainy, snowy).</p>
+<p><b>Comparison between weekdays and weekends:</b> A bar chart can be used to compare the differences in arrival times between weekdays and weekends during the same time period.</p>
 
 ## Test
