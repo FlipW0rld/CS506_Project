@@ -19,8 +19,8 @@ The preliminary plan requires collecting data such as weather, week day, and bus
 <p><a href="https://docs.google.com/spreadsheets/d/1bjB12z-MD0Y7CJDZW3cdJz3a1asGTp7nqkDMJSMV5Mw/edit?resourcekey=&gid=1078554397#gid=1078554397" target="_blank"><strong>Sheet »</strong></a></p>
 
 ## Data Modeling
-<p><br>Linear regression model</br>: can be used as an initial model to predict bus arrival time.</p>
-<p>**Decision trees or random forests**: These models can handle complex nonlinear relationships and are suitable for situations involving multiple influencing factors, such as weather, traffic, and the difference between weekdays and weekends.</p>
+<p><b>Linear regression model</b>: can be used as an initial model to predict bus arrival time.</p>
+<p><b>Decision trees or random forests</b>: These models can handle complex nonlinear relationships and are suitable for situations involving multiple influencing factors, such as weather, traffic, and the difference between weekdays and weekends.</p>
 
 
 ## Data Visualization
