@@ -1,6 +1,10 @@
 # CS506_Project
 # Boston Bus Route 57 Designated Station Arrival Prediction
-
+## TeamMember
+Jiangjian Xie
+Zhekai Zhu
+Wenyuan Cui
+Mohan Guo
 ## Description
 The Boston 57 bus passes through multiple stops at Boston University and is one of the transportation options for Boston University students to get to school. This project will record the arrival time of bus route 57 at a designated station within a certain period of time. Due to weather factors, changes in the number of commuters on weekdays, and different commuting time points, there may be deviations in the arrival time of the bus. 
 
