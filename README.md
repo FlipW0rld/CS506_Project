@@ -1,7 +1,5 @@
 # CS506_Project
-# 项目名称
-
-
+# Boston Bus Route 57 Designated Station Arrival Prediction
 
 ## Description
 
