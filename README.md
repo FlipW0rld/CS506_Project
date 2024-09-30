@@ -18,8 +18,8 @@ The preliminary plan requires collecting data such as weather, week day, and bus
 <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSd8utxViE5V_fWjTpm7axMdXCRiE4OoGGntMK6CDoeIUio47Q/viewform?usp=sf_link" target="_blank"><strong>Form »</strong></a></p>
 <p><a href="https://docs.google.com/spreadsheets/d/1bjB12z-MD0Y7CJDZW3cdJz3a1asGTp7nqkDMJSMV5Mw/edit?resourcekey=&gid=1078554397#gid=1078554397" target="_blank"><strong>Sheet »</strong></a></p>
 
-## 您计划如何对数据进行建模
+## Data Modeling
 
-## 您打算如何可视化数据？
+## Data Visualization
 
-## 您的测试计划是什么
+## Test
