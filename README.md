@@ -3,7 +3,7 @@
 ## TeamMember
 <p>Jiangjian Xie (xjj2023@bu.edu)</p>
 <p>Zhekai Zhu (zzk@bu.edu)</p>
-<p>Wenyuan Cui</p>
+<p>Wenyuan Cui (wycui@bu.edu)</p>
 <p>Mohan Guo</p>
 
 ## Description
