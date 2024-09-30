@@ -29,3 +29,4 @@ The preliminary plan requires collecting data such as weather, week day, and bus
 <p><b>Comparison between weekdays and weekends:</b> A bar chart can be used to compare the differences in arrival times between weekdays and weekends during the same time period.</p>
 
 ## Test
+The project plans to record data from October 7th to December 1st, and use October's data as the training set and November's data as the testing set.
