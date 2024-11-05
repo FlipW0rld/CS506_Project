@@ -41,13 +41,15 @@ Team members took turns recording bus arrival times either through on-site obser
 
 We visualized the distribution of bus arrival counts for each weekday using a bar chart. This helps identify patterns in bus frequency across different days of the week.
 
-![Bus Arrival Count by Weekday](bus_arrival_weekday.png)
+![image](https://github.com/user-attachments/assets/b09a1ae4-0024-456c-bcf8-c3626ce659d3)
+
 
 ### Distribution of Arrival Times
 
 We visualized the distribution of bus arrival times throughout the day using a histogram. This provides insights into peak arrival times and helps understand the general trend of bus schedules.
 
-![Distribution of Arrival Times](arrival_time_distribution.png)
+![image](https://github.com/user-attachments/assets/91db2e2c-dc9a-4287-8299-26b0a166f0b1)
+
 
 ## Current Data Modeling Methods
 
