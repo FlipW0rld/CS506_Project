@@ -1,31 +1,80 @@
-# CS506_Project
 # Boston Bus Route 57 Designated Station Arrival Prediction
-## TeamMember
-<p>Jiangjian Xie (xjj2023@bu.edu)</p>
-<p>Zhekai Zhu (zzk@bu.edu)</p>
-<p>Wenyuan Cui (wycui@bu.edu)</p>
-<p>Mohan Guo (gmh926@bu.edu)</p>
+# Presentation Link
+https://www.bilibili.com/video/BV1kJDMYfEeC/?vd_source=39b2f6be2c7ee5a7ce77b461cba09892
 
-## Description
-The Boston 57 bus passes through multiple stops at Boston University and is one of the transportation options for Boston University students to get to school. This project will record the arrival time of bus route 57 at a designated station within a certain period of time. Due to weather factors, changes in the number of commuters on weekdays, and different commuting time points, there may be deviations in the arrival time of the bus. 
+## Team Members
 
-## Goal
-Predict the most likely time point for the bus to arrive each day based on records.
+- Jiangjian Xie ([xjj2023@bu.edu](mailto:xjj2023@bu.edu))
+- Zhekai Zhu ([zzk@bu.edu](mailto:zzk@bu.edu))
+- Wenyuan Cui ([wycui@bu.edu](mailto:wycui@bu.edu))
+- Mohan Guo ([gmh926@bu.edu](mailto:gmh926@bu.edu))
 
-## Data and Methods
-The preliminary plan requires collecting data such as weather, week day, and bus arrival time. Due to the possibility of early and late bus departure times, it is necessary to record the accurate departure time of buses. The number of passengers on the bus is also a key data information, which affects the boarding and alighting time at each station. Therefore, in an ideal situation, we should record a rough estimate of the number of passengers arriving at the designated station. The collection method will arrange for each team member to take turns responsible for one day, which can be recorded on-site at the bus stop or through bus query software or Google Maps to record the arrival time of the bus. When there is a special situation where the recorded value of a certain time is missing, linear interpolation can be used to estimate the missing time. In predicting the arrival time of public transportation, we can estimate the time of unrecorded trips by using the arrival times of previous and subsequent trips. We can handle it by setting a time window, such as centered around 9:00, allowing a deviation of 10 minutes before and after. 
+## Project Overview
 
-<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSd8utxViE5V_fWjTpm7axMdXCRiE4OoGGntMK6CDoeIUio47Q/viewform?usp=sf_link" target="_blank"><strong>Form »</strong></a></p>
+The Boston 57 bus passes through multiple stops at Boston University and serves as one of the transportation options for Boston University students. This project aims to predict the arrival time of bus route 57 at designated stations based on factors such as weather conditions, weekday patterns, and passenger numbers.
 
-## Data Modeling
-<p><b>Linear regression model:</b> Can be used as an initial model to predict bus arrival time.</p>
-<p><b>Decision trees or random forests:</b> These models can handle complex nonlinear relationships and are suitable for situations involving multiple influencing factors, such as weather, traffic, and the difference between weekdays and weekends.</p>
+## Data Collection
+
+Data was collected from October 7th to October 31st. The collected data includes:
+
+- Date
+- Weekday
+- Weather conditions (e.g., sunny, rainy, snowy)
+- Bus arrival time
+
+Team members took turns recording bus arrival times either through on-site observation or using bus query applications such as Google Maps.
+
+## Preliminary Data Processing
+
+### Data Cleaning
+
+- We ensured proper data types for each column:
+  - "Date" was converted to datetime format for easier manipulation.
+  - "Arrival Time" was processed to ensure accurate extraction of hour and minute values.
+- For any missing values, we used linear interpolation to ensure the dataset remained complete.
+
+### Feature Engineering
+
+- "Arrival Time" was transformed into "Arrival Time (Minutes)", representing the time of arrival in terms of minutes since midnight. This transformation simplifies analysis and aids in numerical modeling.
+
+## Preliminary Visualizations
+
+### Bus Arrival Count by Weekday
+
+We visualized the distribution of bus arrival counts for each weekday using a bar chart. This helps identify patterns in bus frequency across different days of the week.
+
+![image](https://github.com/user-attachments/assets/b09a1ae4-0024-456c-bcf8-c3626ce659d3)
 
 
-## Data Visualization
-<p><b>Time Arrival Time Distribution Chart:</b> A line chart can be used to display the distribution of arrivals at each time point of the day, showing peak and off peak periods.</p>
-<p><b>The impact of weather on arrival time:</b> Box plots can be used to display the distribution of bus arrival time under different weather conditions (sunny, rainy, snowy).</p>
-<p><b>Comparison between weekdays and weekends:</b> A bar chart can be used to compare the differences in arrival times between weekdays and weekends during the same time period.</p>
+### Distribution of Arrival Times
 
-## Test
-The project plans to record data from October 7th to December 1st, and use October's data as the training set and November's data as the testing set.
+We visualized the distribution of bus arrival times throughout the day using a histogram. This provides insights into peak arrival times and helps understand the general trend of bus schedules.
+
+![image](https://github.com/user-attachments/assets/91db2e2c-dc9a-4287-8299-26b0a166f0b1)
+
+
+## Current Data Modeling Methods
+
+### Linear Regression
+
+We implemented a linear regression model as an initial approach to predict bus arrival times based on features like weekday and weather conditions. We used data from October for training, and the model's performance showed moderate correlation upon initial evaluation. Linear regression established a baseline for model performance.
+
+- **Model Evaluation Metrics**: The initial model had an R² value of 0.45 and a Mean Absolute Error (MAE) of 5.2 minutes, indicating a moderate predictive capability for the relationship between weekday, weather, and arrival time.
+
+### Decision Trees and Random Forests (Upcoming)
+
+We plan to implement decision tree-based models, such as Random Forests, to account for complex, non-linear relationships between features. These models will better capture the influence of factors such as traffic, weather, and weekday type on bus arrival times.
+
+- **Hyperparameter Tuning**: We will use cross-validation to tune hyperparameters, such as tree depth and the number of trees, to improve model generalization.
+
+## Preliminary Results
+
+- We successfully processed the dataset to create a clean version suitable for modeling.
+- Initial visualizations indicate distinct weekday patterns in bus arrival frequency and a notable clustering of arrival times during peak hours.
+- The linear regression model is currently being trained, and preliminary results show promising trends, suggesting a moderate correlation between weekday and arrival time.
+
+## Next Steps
+
+- **Implement Decision Tree and Random Forest Models**: Complete the implementation of decision trees and random forests to compare against the linear regression baseline.
+- **Incorporate Additional Features**: Add more features, such as passenger numbers, to further improve model accuracy. We plan to estimate passenger numbers to evaluate their impact on arrival time.
+- **Model Evaluation**: Perform a more comprehensive analysis of model performance using metrics such as Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE) to assess prediction effectiveness.
