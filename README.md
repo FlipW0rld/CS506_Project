@@ -121,8 +121,5 @@ We plan to implement decision tree-based models, such as Random Forests, to acco
 - Initial visualizations indicate distinct weekday patterns in bus arrival frequency and a notable clustering of arrival times during peak hours.
 - The linear regression model is currently being trained, and preliminary results show promising trends, suggesting a moderate correlation between weekday and arrival time.
 
-## Next Steps
+## COnclusion
 
-- **Implement Decision Tree and Random Forest Models**: Complete the implementation of decision trees and random forests to compare against the linear regression baseline.
-- **Incorporate Additional Features**: Add more features, such as passenger numbers, to further improve model accuracy. We plan to estimate passenger numbers to evaluate their impact on arrival time.
-- **Model Evaluation**: Perform a more comprehensive analysis of model performance using metrics such as Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE) to assess prediction effectiveness.
