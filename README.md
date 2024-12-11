@@ -25,8 +25,7 @@ ne of the transportation options for Boston University students. This project ai
 - git clone https://github.com/FlipW0rld/CS506_Project.git
 - cd CS506_Project
 - make install
-- make notebook
-- jupyter notebook
+- use local notebook to run .ipynb file
 - Then run each cell in test_3models.ipynb and test_diff_dataset.ipynb
 
 ## Methodology (方法)
