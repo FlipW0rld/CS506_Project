@@ -101,7 +101,7 @@ We visualized the distribution of bus arrival times throughout the day using a h
 ![image](https://github.com/user-attachments/assets/91db2e2c-dc9a-4287-8299-26b0a166f0b1)
 
 
-## Current Data Modeling Methods
+### Current Data Modeling Methods
 
 ### Linear Regression
 
@@ -115,11 +115,11 @@ We plan to implement decision tree-based models, such as Random Forests, to acco
 
 - **Hyperparameter Tuning**: We will use cross-validation to tune hyperparameters, such as tree depth and the number of trees, to improve model generalization.
 
-## Preliminary Results
+### Results
 
 - We successfully processed the dataset to create a clean version suitable for modeling.
 - Initial visualizations indicate distinct weekday patterns in bus arrival frequency and a notable clustering of arrival times during peak hours.
 - The linear regression model is currently being trained, and preliminary results show promising trends, suggesting a moderate correlation between weekday and arrival time.
 
-## COnclusion
+## Conclusion
 
