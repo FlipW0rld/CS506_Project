@@ -32,7 +32,7 @@ ne of the transportation options for Boston University students. This project ai
 
 ### Data description and Collection:
 
-Data was collected from October 7th to November 31st. The collected data includes:
+Training Data was collected from October 7th to November 31st. The collected data includes:
 
 - Date
 - Weekday
