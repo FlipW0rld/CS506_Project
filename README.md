@@ -59,6 +59,28 @@ Team members took turns recording bus arrival times either through on-site obser
 #### Insights
 - Observed clear weekday patterns and clustering of arrival times during specific hours, indicating predictable bus frequency during peak periods.
 
+### Model Development
+#### Linear Regression
+- Goal: Establish a baseline for predicting bus arrival times.
+- Features Used: Weekday, weather conditions, and other derived variables.
+- Evaluation Metrics:
+Coefficient of Determination (R²): 0.45
+Mean Absolute Error (MAE): 5.2 minutes
+- Preliminary Findings: Demonstrated moderate correlation, with room for improvement in capturing non-linear relationships.
+- 
+#### Decision Trees and Random Forests (In Progress)
+- Objective: Improve predictive accuracy by capturing complex, non-linear relationships among features.
+- Hyperparameter Tuning:
+Experimented with parameters such as maximum tree depth and the number of trees to enhance performance.
+- Expected Outcomes: Improved generalization and better handling of feature interactions, especially for weather and weekday influences.
+
+### Model Evaluation
+- Metrics:
+Mean Absolute Error (MAE)
+Root Mean Squared Error (RMSE)
+R² Score
+- Cross-Validation: Used cross-validation techniques to evaluate model robustness and prevent overfitting.
+
 ## Preliminary Visualizations
 
 ### Bus Arrival Count by Weekday
