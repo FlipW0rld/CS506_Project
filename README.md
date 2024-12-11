@@ -96,8 +96,6 @@ TimeSeriesSplit for validation, ensuring that time-order dependencies are mainta
 - Includes error handling to ensure critical columns (Arrival Time, Weather) exist in the dataset.
 
 
-_________________________`````
-
 ### Evaluation and Visualization:
 To assess the performance of the models and the impact of feature engineering, we compared the Mean Absolute Error (MAE) across different models trained with both the original dataset and the enriched dataset, which included weather-related features. The results are summarized below:
 
@@ -112,17 +110,6 @@ These results highlight that the XGBoost model slightly outperformed the others 
 #### impact of Feature Engineering
 To evaluate the effect of introducing weather-related features, we compared the MAE of models trained on the original dataset (without weather features) and the enriched dataset (with weather features). As shown in the chart, the MAE decreased from 13.40 to 12.70, indicating that the additional features significantly improved model accuracy. This reduction demonstrates the importance of integrating external contextual data, such as weather conditions, in capturing real-world patterns and variability.
 ![image](https://github.com/user-attachments/assets/85a214d6-3be9-43d2-bf68-c91bfc4602e7)
-
-
-### 为达到目标而采取的方法的有效性 
-
-
-
-
-
-
-
-
 
 ## Progress since the midterm report
 ### Model Implementation and Enhancement:
