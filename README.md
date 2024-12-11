@@ -99,7 +99,21 @@ TimeSeriesSplit for validation, ensuring that time-order dependencies are mainta
 
 _________________________`````
 
-### Evaluation and Visualization (评价和可视化，可视化，解释和主张):
+### Evaluation and Visualization:
+To assess the performance of the models and the impact of feature engineering, we compared the Mean Absolute Error (MAE) across different models trained with both the original dataset and the enriched dataset, which included weather-related features. The results are summarized below:
+
+#### Model Comparison
+Random Forest achieved an MAE of 13.40 with key hyperparameters such as n_estimators=300, min_samples_leaf=5, and random_state=42.
+LightGBM reported an MAE of 13.65, with parameters including learning_rate=0.01, n_estimators=300, and default tree structure settings (num_leaves=31).
+XGBoost demonstrated the best performance, achieving an MAE of 13.25, using a depth-limited configuration (max_depth=3), learning_rate=0.05, and n_estimators=100.
+These results highlight that the XGBoost model slightly outperformed the others in terms of error minimization.
+![image](https://github.com/user-attachments/assets/51b38637-fb67-4c3f-905d-868bbc651a1e)
+
+
+#### impact of Feature Engineering
+To evaluate the effect of introducing weather-related features, we compared the MAE of models trained on the original dataset (without weather features) and the enriched dataset (with weather features). As shown in the chart, the MAE decreased from 13.40 to 12.70, indicating that the additional features significantly improved model accuracy. This reduction demonstrates the importance of integrating external contextual data, such as weather conditions, in capturing real-world patterns and variability.
+![image](https://github.com/user-attachments/assets/85a214d6-3be9-43d2-bf68-c91bfc4602e7)
+
 
 ### 为达到目标而采取的方法的有效性 
 
