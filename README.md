@@ -78,7 +78,23 @@ To incorporate weather effects, hourly weather data was fetched using the Open-M
 #### Feature Engineering Outcomes
 The final dataset, saved as a csv file, contains a robust set of features encompassing time, weather, and peak-hour patterns. These engineered features provide diverse and relevant information, enabling the model to make more accurate and insightful predictions.
 
-### Model Training (模型构建和训练):
+### Model Training
+#### test_3models
+- Focuses on training multiple models, including:
+Random Forest Regressor
+LightGBM Regressor
+XGBoost Regressor
+- Employs techniques like:
+Hyperparameter tuning using GridSearchCV for optimized model performance.
+TimeSeriesSplit for validation, ensuring that time-order dependencies are maintained.
+- Evaluation uses Mean Absolute Error (MAE) to assess model performance.
+
+#### test_diff_dataset
+- Includes preprocess_old_data and preprocess_new_data for handling datasets with potentially different schemas:
+- Converts time-based features (Arrival Time) into a numerical format (arrival_minutes_after_noon).
+- Encodes categorical features like Weather into numerical codes.
+- Uses forward and backward fill to handle missing values.
+- Includes error handling to ensure critical columns (Arrival Time, Weather) exist in the dataset.
 
 
 _________________________`````
