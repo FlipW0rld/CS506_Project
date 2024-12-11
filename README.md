@@ -35,17 +35,9 @@ Data was collected from October 7th to October 31st. The collected data includes
 
 Team members took turns recording bus arrival times either through on-site observation or using bus query applications such as Google Maps and MBTA.
 
-### Preliminary Data Processing
+### Data Processing
 
-#### Data Cleaning
-
-- We ensured proper data types for each column:
-  - "Date" was converted to datetime format for easier manipulation.
-  - "Arrival Time" was processed to ensure accurate extraction of hour and minute values.
-- For any missing values, we used linear interpolation to ensure the dataset remained complete.
-
-#### Outlier Detection
-- Identified and removed anomalous data points, such as arrival times outside normal operating hours, to enhance model reliability.
+数据采集、处理、清理等
 
 ### Feature Engineering
 
@@ -90,36 +82,7 @@ R² Score
 
 
 ## Experiments and Results
-### LightGBM
-#### Daily arrival time distribution line chart
-
-![9b6b1b8a22d6d64eed08db95caa25e7](https://github.com/user-attachments/assets/c1c8a4a5-2b3f-47a1-94e1-a9ba9cd9c641)
-
-
-
-
-#### Boxplot of weather effects on arrival time
-
-![8b70a7976faad9dfc72da609872c3c1](https://github.com/user-attachments/assets/86380964-22e7-46ad-bca3-51dce256fe1a)
-
-
-
-
-#### Weekday vs. weekend bar chart
-![510129b2ec307c3fb838122d3b72b5f](https://github.com/user-attachments/assets/97509fa3-5885-4707-b057-a1ab0b2f6b13)
-
-### XGBoost
-#### Daily arrival time distribution line chart
-![7679502cbf04ad9d572c52038b7d5eb](https://github.com/user-attachments/assets/4621b0bd-f6d4-4280-9e27-40241dca1ef3)
-
-
-#### Boxplot of weather effects on arrival time
-![327e0923abd9cb55d82d3d265ec48cd](https://github.com/user-attachments/assets/c412785e-8215-4705-aabe-1993e1ca3d9d)
-
-
-#### Weekday vs. weekend bar chart
-![671e729608fa836adf6b368f2d7c5e7](https://github.com/user-attachments/assets/b6677aa0-45da-47b8-af77-485ceb67ba06)
-
+可视化、解释和权利要求
 
 
 
@@ -140,11 +103,9 @@ We plan to implement decision tree-based models, such as Random Forests, to acco
 
 - **Hyperparameter Tuning**: We will use cross-validation to tune hyperparameters, such as tree depth and the number of trees, to improve model generalization.
 
-### Results
+### 中期报告以来的进展情况
 
-- We successfully processed the dataset to create a clean version suitable for modeling.
-- Initial visualizations indicate distinct weekday patterns in bus arrival frequency and a notable clustering of arrival times during peak hours.
-- The linear regression model is currently being trained, and preliminary results show promising trends, suggesting a moderate correlation between weekday and arrival time.
 
-## Conclusion
+
+## Result and Conclusion
 
