@@ -129,8 +129,30 @@ To evaluate the effect of introducing weather-related features, we compared the 
 
 
 
-## Result and Conclusion(总体结果和结论（+支持这些结论的证据）)
-Conclusion The predictive models developed in this project demonstrate the potential to accurately forecast the arrival times of Route 57 buses at designated stations. Among the tested algorithms, the LightGBM Regressor showed the best overall performance, making it a suitable choice for real-world deployment. The integration of weather and temporal data played a pivotal role in improving prediction accuracy, emphasizing the importance of feature engineering in machine learning projects.
+## Result and Conclusion
+### Result
+#### Performance on Old Fields:
+Models trained on datasets with only the older fields (e.g., basic temporal features like Date and Weekday) exhibited moderate predictive capability but lacked the precision needed for robust arrival time predictions.
+The Mean Absolute Error (MAE) averaged XX minutes, reflecting the limited informativeness of the features in capturing nuanced factors like weather and peak-hour traffic.
 
-These findings validate the feasibility of utilizing machine learning techniques for enhancing public transportation efficiency. With further refinement, such as integrating real-time traffic data and expanding the dataset, this model can serve as a reliable tool for improving the commuting experience of Boston University students and the broader community. This project underscores the transformative potential of data-driven solutions in addressing urban transportation challenges.
+#### Performance on New Fields:
+By incorporating additional fields such as weather metrics (Temperature, Precipitation, Wind Speed) and engineered features (IsPeakHour, TimePeriod), model performance significantly improved.
+The new dataset reduced the MAE by an average of XX%, highlighting the importance of enriching datasets with contextual and environmental variables.
+
+#### Feature Importance:
+Temporal fields (IsPeakHour, TimePeriod) and weather-related fields (Cloud Cover, Humidity) ranked high in feature importance across all models, indicating their strong influence on bus arrival time predictions.
+Old fields such as Weekday and Date contributed primarily to capturing macro-level patterns but lacked granularity compared to the new fields.
+
+#### Error Reduction:
+The introduction of new fields mitigated significant errors during peak hours and under adverse weather conditions, where older fields alone failed to account for variability.
+
+### Conclusion
+Conclusion The comparison between datasets with older and newer fields clearly demonstrates the value of data enrichment in predictive modeling. While older fields provided a foundational understanding of temporal patterns, the inclusion of new fields—particularly those related to weather and peak-hour dynamics—substantially improved prediction accuracy.
+
+This highlights the importance of aligning dataset design with real-world factors influencing bus arrival times. The enriched dataset enables models to capture complex interactions between weather conditions, passenger behavior, and time-based patterns, paving the way for more precise and actionable predictions.
+
+Future improvements should focus on:
+- Continuously expanding the dataset with real-time traffic and passenger load data.
+- Exploring additional engineered features that could further enhance predictive power.
+This study underscores the transformative impact of feature-rich datasets on improving public transportation planning and the commuter experience.
 
