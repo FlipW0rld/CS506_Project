@@ -28,7 +28,7 @@ ne of the transportation options for Boston University students. This project ai
 - use local notebook to run .ipynb file
 - Then run each cell in test_3models.ipynb and test_diff_dataset.ipynb
 
-## Methodology (方法)
+## Methodology
 
 ### Data description and Collection:
 
