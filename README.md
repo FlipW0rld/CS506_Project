@@ -132,12 +132,12 @@ To evaluate the effect of introducing weather-related features, we compared the 
 ## Result and Conclusion
 ### Result
 #### Performance on Old Fields:
-Models trained on datasets with only the older fields (e.g., basic temporal features like Date and Weekday) exhibited moderate predictive capability but lacked the precision needed for robust arrival time predictions.
-The Mean Absolute Error (MAE) averaged XX minutes, reflecting the limited informativeness of the features in capturing nuanced factors like weather and peak-hour traffic.
+Models trained on datasets with only the older fields (e.g., basic temporal features like Date and Weekday) exhibited moderate predictive capability but lacked the precision needed for robust arrival time predictions，
+reflecting the limited informativeness of the features in capturing nuanced factors like weather and peak-hour traffic.
 
 #### Performance on New Fields:
-By incorporating additional fields such as weather metrics (Temperature, Precipitation, Wind Speed) and engineered features (IsPeakHour, TimePeriod), model performance significantly improved.
-The new dataset reduced the MAE by an average of XX%, highlighting the importance of enriching datasets with contextual and environmental variables.
+By incorporating additional fields such as weather metrics (Temperature, Precipitation, Wind Speed) and engineered features (IsPeakHour, TimePeriod), model performance significantly improved，
+highlighting the importance of enriching datasets with contextual and environmental variables.
 
 #### Feature Importance:
 Temporal fields (IsPeakHour, TimePeriod) and weather-related fields (Cloud Cover, Humidity) ranked high in feature importance across all models, indicating their strong influence on bus arrival time predictions.
