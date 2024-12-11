@@ -48,7 +48,19 @@ Data was collected from October 7th to November 31st. The collected data include
 
 Team members took turns recording bus arrival times either through on-site observation or using bus query applications such as Google Maps and MBTA Website.
 
-### Data Processing (数据处理、清理，数据预处理等):
+### Data Processing 
+#### test_3models
+- Contains functions such as load_data and get_features_and_target for data processing.
+load_data reads the dataset, drops unnecessary columns (Date, Week Day, Arrival Time), and handles missing values using forward and backward fill.
+get_features_and_target separates the dataset into features (X) and the target variable (y), specifically targeting arrival_minutes_after_noon.
+- Preprocessing includes data standardization through pipelines, which is essential for models like gradient-boosting frameworks.
+
+#### test_diff_dataset
+- Includes preprocess_old_data and preprocess_new_data for handling datasets with potentially different schemas:
+- Converts time-based features (Arrival Time) into a numerical format (arrival_minutes_after_noon).
+- Encodes categorical features like Weather into numerical codes.
+- Uses forward and backward fill to handle missing values.
+- Includes error handling to ensure critical columns (Arrival Time, Weather) exist in the dataset.
 
 
 ### Feature Engineering (特征工程):
