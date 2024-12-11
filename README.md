@@ -30,7 +30,7 @@ ne of the transportation options for Boston University students. This project ai
 
 ## Methodology
 
-### Data description and Collection:
+### 1.Data description and Collection:
 
 Training Data was collected from October 7th to November 31st. The collected data includes:
 
@@ -47,7 +47,7 @@ Training Data was collected from October 7th to November 31st. The collected dat
 
 Team members took turns recording bus arrival times either through on-site observation or using bus query applications such as Google Maps and MBTA Website.
 
-### Data Processing 
+### 2.Data Processing 
 #### test_3models
 - Contains functions such as load_data and get_features_and_target for data processing.
 load_data reads the dataset, drops unnecessary columns (Date, Week Day, Arrival Time), and handles missing values using forward and backward fill.
@@ -62,7 +62,7 @@ get_features_and_target separates the dataset into features (X) and the target v
 - Includes error handling to ensure critical columns (Arrival Time, Weather) exist in the dataset.
 
 
-### Feature Engineering:
+### 3.Feature Engineering:
 In this project, a series of feature engineering steps were implemented to enhance the model's performance and capture underlying patterns in the data. Below is a detailed explanation of these steps:
 
 #### Data Preprocessing
@@ -77,7 +77,7 @@ To incorporate weather effects, hourly weather data was fetched using the Open-M
 #### Feature Engineering Outcomes
 The final dataset, saved as a csv file, contains a robust set of features encompassing time, weather, and peak-hour patterns. These engineered features provide diverse and relevant information, enabling the model to make more accurate and insightful predictions.
 
-### Model Training
+### 4.Model Training
 #### test_3models
 - Focuses on training multiple models, including:
 Random Forest Regressor
@@ -96,7 +96,7 @@ TimeSeriesSplit for validation, ensuring that time-order dependencies are mainta
 - Includes error handling to ensure critical columns (Arrival Time, Weather) exist in the dataset.
 
 
-### Evaluation and Visualization:
+### 5.Evaluation and Visualization:
 To assess the performance of the models and the impact of feature engineering, we compared the Mean Absolute Error (MAE) across different models trained with both the original dataset and the enriched dataset, which included weather-related features. The results are summarized below:
 
 #### Model Comparison
