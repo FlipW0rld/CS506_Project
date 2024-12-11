@@ -134,7 +134,7 @@ Develop interactive dashboards to visualize predictions, feature impacts, and mo
 
 
 ## Result and Conclusion
-### Result
+### 1.Result
 #### Performance on Old Fields:
 Models trained on datasets with only the older fields (e.g., basic temporal features like Date and Weekday) exhibited moderate predictive capability but lacked the precision needed for robust arrival time predictions，
 reflecting the limited informativeness of the features in capturing nuanced factors like weather and peak-hour traffic.
@@ -150,7 +150,7 @@ Old fields such as Weekday and Date contributed primarily to capturing macro-lev
 #### Error Reduction:
 The introduction of new fields mitigated significant errors during peak hours and under adverse weather conditions, where older fields alone failed to account for variability.
 
-### Conclusion
+### 2.Conclusion
 Conclusion The comparison between datasets with older and newer fields clearly demonstrates the value of data enrichment in predictive modeling. While older fields provided a foundational understanding of temporal patterns, the inclusion of new fields—particularly those related to weather and peak-hour dynamics—substantially improved prediction accuracy.
 
 This highlights the importance of aligning dataset design with real-world factors influencing bus arrival times. The enriched dataset enables models to capture complex interactions between weather conditions, passenger behavior, and time-based patterns, paving the way for more precise and actionable predictions.
