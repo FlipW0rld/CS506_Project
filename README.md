@@ -67,48 +67,16 @@ get_features_and_target separates the dataset into features (X) and the target v
 In this project, a series of feature engineering steps were implemented to enhance the model's performance and capture underlying patterns in the data. Below is a detailed explanation of these steps:
 
 #### Data Preprocessing
-After loading the raw data, several preprocessing steps were applied:
+After loading the raw data, several preprocessing steps were applied to ensure the dataset was ready for further analysis. The Date column was converted into a standard datetime format, and the Arrival Time column was converted into time format. The Week Day column was mapped to numeric values (e.g., Monday = 0, Sunday = 6), enabling easier handling by machine learning models. Additionally, the Weather column was transformed using one-hot encoding to generate binary indicator variables for different weather conditions, ensuring categorical variables did not introduce biases.
 
-#####  ~Date and Time Formatting:
-The Date column was converted into a standard datetime format.
-The Arrival Time column was converted into time format, and new features were derived to represent ground truth time.
-##### ~Derived Time Features:
-arrival_minutes_after_noon: This feature calculates the number of minutes between the arrival time and noon (12:00). It is derived directly from the Arrival Time column without explicitly creating arrival_hour or arrival_minute.
-##### ~Weekday Mapping:
-The Week Day column was mapped to numeric values (e.g., Monday = 0, Sunday = 6) to facilitate machine learning tasks.
-##### ~Weather Encoding:
-The Weather column was transformed using one-hot encoding, generating binary indicator variables for different weather conditions. This avoids bias associated with categorical variables.
-Adding Simple Features
+#### Adding Simple Features
+To further enrich the dataset, features representing temporal patterns were added. A binary feature, IsPeakHour, was introduced to identify whether the arrival time fell within typical peak hours (7:00–9:00 in the morning and 17:00–19:00 in the evening). Another feature, TimePeriod, categorized the day into four distinct periods: Early Morning (0:00–6:00), Morning (7:00–11:00), Afternoon (12:00–17:00), and Evening (18:00–23:59). These features capture the behavioral differences in data associated with different times of the day.
 
-To capture additional temporal patterns, the following features were introduced:
-
-##### ~Peak Hour Indicator (IsPeakHour):
-A binary feature that identifies whether the arrival time falls within peak hours: 7:00–9:00 (morning peak) or 17:00–19:00 (evening peak).
-##### ~Time Period Classification (TimePeriod):
-The day was divided into four periods:
-Early Morning: 0:00–6:00
-Morning: 7:00–11:00
-Afternoon: 12:00–17:00
-Evening: 18:00–23:59
-This feature helps capture time-of-day trends and variations in data patterns.
 #### Adding Weather Features
-To incorporate the influence of weather conditions on the data, hourly weather data was fetched from the Open-Meteo API. The following steps were performed:
+To incorporate weather effects, hourly weather data was fetched using the Open-Meteo API. For each unique date in the dataset, weather data was retrieved based on the latitude and longitude of the location. This data included key weather metrics such as temperature (temperature_2m), apparent temperature (apparent_temperature), precipitation rate (precipitation), wind speed (wind_speed_10m), relative humidity (relative_humidity_2m), and cloud cover (cloud_cover). The hourly data was aligned with the dataset based on the Date and Arrival Time to ensure temporal consistency. Temporary columns created during the merging process were removed, leaving a clean, enriched dataset.
 
-##### ~API Integration:
-For each unique date in the dataset, hourly weather data was fetched using latitude and longitude parameters.
-The weather data includes key variables: temperature, precipitation, wind speed, humidity, and cloud cover.
-##### ~Feature Generation:
-The hourly weather data was processed to extract relevant metrics for each hour, including:
-temperature_2m: Temperature at 2 meters above ground.
-apparent_temperature: Feels-like temperature.
-precipitation: Precipitation rate.
-wind_speed_10m: Wind speed at 10 meters above ground.
-relative_humidity_2m: Relative humidity at 2 meters.
-cloud_cover: Cloud coverage as a percentage.
-##### ~Data Merging:
-The weather data was merged with the original dataset based on the Date and Arrival Time. Temporary columns used during the merging process, such as intermediate timestamps, were removed to keep the dataset clean.
-Feature Engineering Outcomes
-The final enriched dataset includes a comprehensive set of features that capture temporal, weather-related, and peak-hour effects. This enhanced dataset provides the model with diverse dimensions of information, enabling more robust predictions.
+#### Feature Engineering Outcomes
+The final dataset, saved as a csv file, contains a robust set of features encompassing time, weather, and peak-hour patterns. These engineered features provide diverse and relevant information, enabling the model to make more accurate and insightful predictions.
 
 ### Model Training (模型构建和训练):
 
