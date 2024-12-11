@@ -14,21 +14,13 @@ Public transportation is a vital aspect of urban life, providing a reliable and 
 
 This project seeks to address this issue by developing a predictive model for the arrival times of Route 57 buses at designated stations. By leveraging real-world data, including weather conditions, weekday patterns, and bus schedules, we aim to enhance the commuting experience for Boston University students. The insights from this project can potentially contribute to more efficient route planning and better time management for daily commuters.
 
-## Run steps
-- git clone https://github.com/FlipW0rld/CS506_Project.git
-- cd CS506_Project
-- make install
-- make notebook
-- jupyter notebook
-- Then run each cell in test_3models.ipynb and test_diff_dataset.ipynb
-
 ## Project Overview
 
 The Boston 57 bus passes through multiple stops at Boston University and serves as one of the transportation options for Boston University students. This project aims to predict the arrival time of bus route 57 at designated stations based on factors such as weather conditions, weekday patterns, and passenger numbers.
 
 ## Methodology (方法)
 
-### Data Collection:
+### Data Decirption and Collection:
 
 Data was collected from October 7th to November 31st. The collected data includes:
 
@@ -45,64 +37,31 @@ Data was collected from October 7th to November 31st. The collected data include
 
 Team members took turns recording bus arrival times either through on-site observation or using bus query applications such as Google Maps and MBTA Website.
 
-### Data Processing:
-
-数据采集、处理、清理等
+### Data Processing (数据处理、清理，数据预处理等):
 
 
+### Feature Engineering (特征工程):
+
+### Model Training (模型构建和训练):
 
 
+_________________________`````
 
+### Evaluation and Visualization (评价和可视化，可视化，解释和主张):
 
-
-### Feature Engineering
-
-#### Time Transformation
-- Converted "Arrival Time" into "Arrival Time (Minutes)", representing the total minutes since midnight. This facilitates numerical analysis and simplifies model input.
-#### Weather Encoding
-- Categorical weather conditions (e.g., sunny, rainy, snowy) were transformed into numerical values for compatibility with machine learning models.
-#### Derived Features
-- Created new features such as "Day of the Week" and "Is Weekday" to capture potential weekday-specific patterns in bus arrival times.
-
-### Exploratory Data Analysis (EDA)
-#### Visualizations
-- Created bar charts to examine the distribution of bus arrivals across different weekdays.
-- Generated histograms to understand the overall distribution of arrival times during the day and identify peak hours.
-#### Insights
-- Observed clear weekday patterns and clustering of arrival times during specific hours, indicating predictable bus frequency during peak periods.
-
-### Model Development
-
-
-
-
-
-### Model Evaluation
-- Metrics:
-Mean Absolute Error (MAE)
-Root Mean Squared Error (RMSE)
-R² Score
-- Cross-Validation: Used cross-validation techniques to evaluate model robustness and prevent overfitting.
-
-
-
-
-
-## Experiments and Results
-可视化、解释和权利要求
+### 为达到目标而采取的方法的有效性 
 
 
 
 
 
 
-### Current Data Modeling Methods
 
 
 
-### 中期报告以来的进展情况
+## 中期报告以来的进展情况
 
 
 
-## Result and Conclusion
+## Result and Conclusion(总体结果和结论（+支持这些结论的证据）)
 
