@@ -63,7 +63,7 @@ get_features_and_target separates the dataset into features (X) and the target v
 - Includes error handling to ensure critical columns (Arrival Time, Weather) exist in the dataset.
 
 
-### Feature Engineering (特征工程):
+### Feature Engineering:
 In this project, a series of feature engineering steps were implemented to enhance the model's performance and capture underlying patterns in the data. Below is a detailed explanation of these steps:
 
 #### Data Preprocessing
