@@ -31,7 +31,7 @@ ne of the transportation options for Boston University students. This project ai
 
 ## Methodology (方法)
 
-### Data Decirption and Collection:
+### Data description and Collection:
 
 Data was collected from October 7th to November 31st. The collected data includes:
 
