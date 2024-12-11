@@ -15,12 +15,12 @@ Public transportation is a vital aspect of urban life, providing a reliable and 
 This project seeks to address this issue by developing a predictive model for the arrival times of Route 57 buses at designated stations. By leveraging real-world data, including weather conditions, weekday patterns, and bus schedules, we aim to enhance the commuting experience for Boston University students. The insights from this project can potentially contribute to more efficient route planning and better time management for daily commuters.
 
 ## Run steps
--git clone https://github.com/FlipW0rld/CS506_Project.git
--cd CS506_Project
--make install
--make notebook
--jupyter notebook
--Then run each cell in test_3models.ipynb and test_diff_dataset.ipynb
+- git clone https://github.com/FlipW0rld/CS506_Project.git
+- cd CS506_Project
+- make install
+- make notebook
+- jupyter notebook
+- Then run each cell in test_3models.ipynb and test_diff_dataset.ipynb
 
 ## Project Overview
 
