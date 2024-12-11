@@ -126,7 +126,28 @@ To evaluate the effect of introducing weather-related features, we compared the 
 
 
 ## 中期报告以来的进展情况
+1. Model Implementation and Enhancement:
+   Extend Existing Models:
+   We expand the implementation of decision tree and random forest models, optimizing their hyperparameters to ensure robust performance.
+   Explore ensemble techniques like random forests, XGBoost, LightGBM model, to enhance predictive accuracy and generalization.
+   Comparison and Baseline:
+   Compare these models rigorously against the existing linear regression baseline to assess improvement.
+   Introduce feature importance ranking in tree-based models to identify the most influential predictors.
+   
+2. Extra Data Features:
+   We add more features into the input file. The dataset incorporates a diverse range of features to enhance predictive accuracy. Temporal           features include the date, arrival time, day of the week, and hour of the day, capturing time-based patterns. Weather data, fetched via the       Open-Meteo API, adds key metrics such as temperature, apparent temperature, precipitation rate, wind speed, relative humidity, and cloud          cover,   aligned with each record based on location and time. Geographic features, including latitude and longitude, provide spatial context,     while estimated passenger numbers offer insights into the impact of load on arrival times. Derived features like travel duration and time of      day groupings enrich the dataset further. These comprehensive features ensure the model captures both environmental and operational factors,      improving its predictive capability.
+   
+3. Model Evaluation and Diagnostics:
+   Comprehensive Metrics:
+   Assess model performance using a variety of metrics, including Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), R-squared, and Mean     Absolute Percentage Error (MAPE).
 
+4. Future Roadmap:
+   Pipeline Automation:
+   Automate data preprocessing, feature engineering, and model evaluation using a unified pipeline for scalability and efficiency.
+   Real-Time Prediction Capability:
+   Transition from static predictions to real-time inference by integrating the models with APIs or streaming data systems.
+   Interactive Visualization:
+   Develop interactive dashboards to visualize predictions, feature impacts, and model diagnostics for stakeholders.
 
 
 ## Result and Conclusion
