@@ -91,17 +91,7 @@ R² Score
 
 ### Current Data Modeling Methods
 
-### Linear Regression
 
-We implemented a linear regression model as an initial approach to predict bus arrival times based on features like weekday and weather conditions. We used data from October for training, and the model's performance showed moderate correlation upon initial evaluation. Linear regression established a baseline for model performance.
-
-- **Model Evaluation Metrics**: The initial model had an R² value of 0.45 and a Mean Absolute Error (MAE) of 5.2 minutes, indicating a moderate predictive capability for the relationship between weekday, weather, and arrival time.
-
-### Decision Trees and Random Forests (Upcoming)
-
-We plan to implement decision tree-based models, such as Random Forests, to account for complex, non-linear relationships between features. These models will better capture the influence of factors such as traffic, weather, and weekday type on bus arrival times.
-
-- **Hyperparameter Tuning**: We will use cross-validation to tune hyperparameters, such as tree depth and the number of trees, to improve model generalization.
 
 ### 中期报告以来的进展情况
 
