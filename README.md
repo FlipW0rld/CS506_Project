@@ -18,7 +18,9 @@ This project seeks to address this issue by developing a predictive model for th
 
 The Boston 57 bus passes through multiple stops at Boston University and serves as one of the transportation options for Boston University students. This project aims to predict the arrival time of bus route 57 at designated stations based on factors such as weather conditions, weekday patterns, and passenger numbers.
 
-## Data Collection
+## Methodology
+
+### Data Collection
 
 Data was collected from October 7th to October 31st. The collected data includes:
 
