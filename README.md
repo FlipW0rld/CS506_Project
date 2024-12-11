@@ -86,23 +86,36 @@ R² Score
 
 
 ## Experiments and Results
-
-### Daily arrival time distribution line chart
+### LightGBM
+#### Daily arrival time distribution line chart
 
 ![9b6b1b8a22d6d64eed08db95caa25e7](https://github.com/user-attachments/assets/c1c8a4a5-2b3f-47a1-94e1-a9ba9cd9c641)
 
 
 
 
-### Boxplot of weather effects on arrival time
+#### Boxplot of weather effects on arrival time
 
 ![8b70a7976faad9dfc72da609872c3c1](https://github.com/user-attachments/assets/86380964-22e7-46ad-bca3-51dce256fe1a)
 
 
 
 
-### Weekday vs. weekend bar chart
+#### Weekday vs. weekend bar chart
 ![510129b2ec307c3fb838122d3b72b5f](https://github.com/user-attachments/assets/97509fa3-5885-4707-b057-a1ab0b2f6b13)
+
+### XGBoost
+#### Daily arrival time distribution line chart
+![7679502cbf04ad9d572c52038b7d5eb](https://github.com/user-attachments/assets/4621b0bd-f6d4-4280-9e27-40241dca1ef3)
+
+
+#### Boxplot of weather effects on arrival time
+![327e0923abd9cb55d82d3d265ec48cd](https://github.com/user-attachments/assets/c412785e-8215-4705-aabe-1993e1ca3d9d)
+
+
+#### Weekday vs. weekend bar chart
+![671e729608fa836adf6b368f2d7c5e7](https://github.com/user-attachments/assets/b6677aa0-45da-47b8-af77-485ceb67ba06)
+
 
 
 
