@@ -151,6 +151,8 @@ Conclusion The comparison between datasets with older and newer fields clearly d
 
 This highlights the importance of aligning dataset design with real-world factors influencing bus arrival times. The enriched dataset enables models to capture complex interactions between weather conditions, passenger behavior, and time-based patterns, paving the way for more precise and actionable predictions.
 
+XGBoost outperformed the other models with the lowest MAE of 13.25, using a depth-limited configuration (max_depth=3), a learning rate of 0.05, and 100 estimators. Random Forest followed with an MAE of 13.40 (n_estimators=300, min_samples_leaf=5, random_state=42), while LightGBM achieved an MAE of 13.65 (learning_rate=0.01, n_estimators=300, num_leaves=31). These results demonstrate XGBoost's slight edge in minimizing prediction errors.
+
 Future improvements should focus on:
 - Continuously expanding the dataset with real-time traffic and passenger load data.
 - Exploring additional engineered features that could further enhance predictive power.
