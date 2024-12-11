@@ -18,26 +18,34 @@ This project seeks to address this issue by developing a predictive model for th
 
 The Boston 57 bus passes through multiple stops at Boston University and serves as one of the transportation options for Boston University students. This project aims to predict the arrival time of bus route 57 at designated stations based on factors such as weather conditions, weekday patterns, and passenger numbers.
 
-## Methodology
+## Methodology (方法)
 
-### Data Collection
+### Data Collection:
 
-Data was collected from October 7th to October 31st. The collected data includes:
+Data was collected from October 7th to November 31st. The collected data includes:
 
 - Date
 - Weekday
-- Weather conditions (e.g., sunny, rainy, snowy)
-- Precipitation
-- Humidity
-- Wind speed
-- Cloud cover
 - Bus arrival time
+- Weather conditions (e.g., sunny, rainy, snowy)
+  - Temperature at 2 meters
+  - sensible temperature
+  - Precipitation
+  - Humidity
+  - Wind speed
+  - Cloud cover
 
-Team members took turns recording bus arrival times either through on-site observation or using bus query applications such as Google Maps and MBTA.
+Team members took turns recording bus arrival times either through on-site observation or using bus query applications such as Google Maps and MBTA Website.
 
-### Data Processing
+### Data Processing:
 
 数据采集、处理、清理等
+
+
+
+
+
+
 
 ### Feature Engineering
 
@@ -56,19 +64,10 @@ Team members took turns recording bus arrival times either through on-site obser
 - Observed clear weekday patterns and clustering of arrival times during specific hours, indicating predictable bus frequency during peak periods.
 
 ### Model Development
-#### Linear Regression
-- Goal: Establish a baseline for predicting bus arrival times.
-- Features Used: Weekday, weather conditions, and other derived variables.
-- Evaluation Metrics:
-Coefficient of Determination (R²): 0.45
-Mean Absolute Error (MAE): 5.2 minutes
-- Preliminary Findings: Demonstrated moderate correlation, with room for improvement in capturing non-linear relationships.
-- 
-#### Decision Trees and Random Forests (In Progress)
-- Objective: Improve predictive accuracy by capturing complex, non-linear relationships among features.
-- Hyperparameter Tuning:
-Experimented with parameters such as maximum tree depth and the number of trees to enhance performance.
-- Expected Outcomes: Improved generalization and better handling of feature interactions, especially for weather and weekday influences.
+
+
+
+
 
 ### Model Evaluation
 - Metrics:
