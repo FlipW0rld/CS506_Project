@@ -1,5 +1,5 @@
 # Boston Bus Route 57 Designated Station Arrival Prediction
-# Presentation Link
+# Midterm Presentation Link
 https://www.bilibili.com/video/BV1kJDMYfEeC/?vd_source=39b2f6be2c7ee5a7ce77b461cba09892
 
 ## Team Members
@@ -8,6 +8,11 @@ https://www.bilibili.com/video/BV1kJDMYfEeC/?vd_source=39b2f6be2c7ee5a7ce77b461c
 - Zhekai Zhu ([zzk@bu.edu](mailto:zzk@bu.edu))
 - Wenyuan Cui ([wycui@bu.edu](mailto:wycui@bu.edu))
 - Mohan Guo ([gmh926@bu.edu](mailto:gmh926@bu.edu))
+
+## Introduction
+Public transportation is a vital aspect of urban life, providing a reliable and cost-effective means of mobility for residents and students alike. Among the many bus routes in Boston, Route 57 serves as a key transit option for Boston University students, connecting them to various stops across the city. However, the uncertainty of bus arrival times, influenced by factors such as weather conditions, traffic, and passenger load, often creates inconvenience for passengers.
+
+This project seeks to address this issue by developing a predictive model for the arrival times of Route 57 buses at designated stations. By leveraging real-world data, including weather conditions, weekday patterns, and bus schedules, we aim to enhance the commuting experience for Boston University students. The insights from this project can potentially contribute to more efficient route planning and better time management for daily commuters.
 
 ## Project Overview
 
