@@ -130,4 +130,7 @@ To evaluate the effect of introducing weather-related features, we compared the 
 
 
 ## Result and Conclusion(总体结果和结论（+支持这些结论的证据）)
+Conclusion The predictive models developed in this project demonstrate the potential to accurately forecast the arrival times of Route 57 buses at designated stations. Among the tested algorithms, the LightGBM Regressor showed the best overall performance, making it a suitable choice for real-world deployment. The integration of weather and temporal data played a pivotal role in improving prediction accuracy, emphasizing the importance of feature engineering in machine learning projects.
+
+These findings validate the feasibility of utilizing machine learning techniques for enhancing public transportation efficiency. With further refinement, such as integrating real-time traffic data and expanding the dataset, this model can serve as a reliable tool for improving the commuting experience of Boston University students and the broader community. This project underscores the transformative potential of data-driven solutions in addressing urban transportation challenges.
 
