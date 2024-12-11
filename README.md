@@ -81,7 +81,11 @@ Root Mean Squared Error (RMSE)
 R² Score
 - Cross-Validation: Used cross-validation techniques to evaluate model robustness and prevent overfitting.
 
-## Preliminary Visualizations
+
+
+
+
+## Experiments and Results
 
 ### Bus Arrival Count by Weekday
 
