@@ -31,18 +31,33 @@ Data was collected from October 7th to October 31st. The collected data includes
 
 Team members took turns recording bus arrival times either through on-site observation or using bus query applications such as Google Maps.
 
-## Preliminary Data Processing
+### Preliminary Data Processing
 
-### Data Cleaning
+#### Data Cleaning
 
 - We ensured proper data types for each column:
   - "Date" was converted to datetime format for easier manipulation.
   - "Arrival Time" was processed to ensure accurate extraction of hour and minute values.
 - For any missing values, we used linear interpolation to ensure the dataset remained complete.
 
+#### Outlier Detection
+- Identified and removed anomalous data points, such as arrival times outside normal operating hours, to enhance model reliability.
+
 ### Feature Engineering
 
-- "Arrival Time" was transformed into "Arrival Time (Minutes)", representing the time of arrival in terms of minutes since midnight. This transformation simplifies analysis and aids in numerical modeling.
+#### Time Transformation
+- Converted "Arrival Time" into "Arrival Time (Minutes)", representing the total minutes since midnight. This facilitates numerical analysis and simplifies model input.
+#### Weather Encoding
+- Categorical weather conditions (e.g., sunny, rainy, snowy) were transformed into numerical values for compatibility with machine learning models.
+#### Derived Features
+- Created new features such as "Day of the Week" and "Is Weekday" to capture potential weekday-specific patterns in bus arrival times.
+
+### Exploratory Data Analysis (EDA)
+#### Visualizations
+- Created bar charts to examine the distribution of bus arrivals across different weekdays.
+- Generated histograms to understand the overall distribution of arrival times during the day and identify peak hours.
+#### Insights
+- Observed clear weekday patterns and clustering of arrival times during specific hours, indicating predictable bus frequency during peak periods.
 
 ## Preliminary Visualizations
 
