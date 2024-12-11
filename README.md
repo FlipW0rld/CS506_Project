@@ -87,18 +87,28 @@ R² Score
 
 ## Experiments and Results
 
-### Bus Arrival Count by Weekday
+### Daily arrival time distribution line chart
 
 We visualized the distribution of bus arrival counts for each weekday using a bar chart. This helps identify patterns in bus frequency across different days of the week.
+![9b6b1b8a22d6d64eed08db95caa25e7](https://github.com/user-attachments/assets/c1c8a4a5-2b3f-47a1-94e1-a9ba9cd9c641)
 
-![image](https://github.com/user-attachments/assets/b09a1ae4-0024-456c-bcf8-c3626ce659d3)
 
 
-### Distribution of Arrival Times
+
+### Boxplot of weather effects on arrival time
 
 We visualized the distribution of bus arrival times throughout the day using a histogram. This provides insights into peak arrival times and helps understand the general trend of bus schedules.
+![8b70a7976faad9dfc72da609872c3c1](https://github.com/user-attachments/assets/86380964-22e7-46ad-bca3-51dce256fe1a)
 
-![image](https://github.com/user-attachments/assets/91db2e2c-dc9a-4287-8299-26b0a166f0b1)
+
+
+
+### Weekday vs. weekend bar chart
+![510129b2ec307c3fb838122d3b72b5f](https://github.com/user-attachments/assets/97509fa3-5885-4707-b057-a1ab0b2f6b13)
+
+
+
+
 
 
 ### Current Data Modeling Methods
