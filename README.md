@@ -33,7 +33,7 @@ Data was collected from October 7th to October 31st. The collected data includes
 - Cloud cover
 - Bus arrival time
 
-Team members took turns recording bus arrival times either through on-site observation or using bus query applications such as Google Maps.
+Team members took turns recording bus arrival times either through on-site observation or using bus query applications such as Google Maps and MBTA.
 
 ### Preliminary Data Processing
 
